@@ -1,0 +1,45 @@
+# ---------- 二进制文件 ----------
+# 编译产物
+*.o
+*.a
+*.so
+*.exe
+*.dll
+
+# 压缩包
+*.zip
+*.tar
+*.gz
+
+# 虚拟机/容器文件
+*.vdi
+*.qcow2
+*.img
+
+# 数据库文件
+*.db
+*.sqlite
+
+# 日志/缓存
+*.log
+*.tmp
+.cache/
+
+# IDE/编辑器文件
+.swp
+.swo
+.idea/
+.vscode/
+
+# 依赖目录
+vendor/
+node_modules/
+
+# 敏感文件
+.env
+*.secret
+
+# 构建目录
+/build/
+/dist/
+/bin/

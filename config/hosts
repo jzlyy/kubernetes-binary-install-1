@@ -1,0 +1,7 @@
+172.168.20.10     master-node1
+172.168.20.30     master-node2
+172.168.20.50     master-node3
+172.168.20.70     worker-node1
+172.168.20.90     worker-node1
+172.168.20.110    VIP
+

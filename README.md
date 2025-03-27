@@ -1,4 +1,4 @@
-# kubernetes-binary-install-2
+# kubernetes-binary-install-1
 [![GitHub License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
@@ -35,14 +35,14 @@ High Availability (HA) Cluster using kubeadm and keepalived (Docker container ru
 | Worker     | 4cores  | 8GB    | 100GB |
 
 ### **Version Compatibility**
-| Kubernetes Versions |         Tested CNI Versions          |  Containerd Versions |
-|---------------------|--------------------------------------|----------------------|
-| 1.32.3              | Calico 3.29.2  Flannel 0.26.5        | 1.7+                 |
-| 1.31.6              | Calico 3.29.1  Flannel 0.26.1        | 1.6+                 |
+| Kubernetes Versions |         Tested CNI Versions          |  Docker Versions |
+|---------------------|--------------------------------------|------------------|
+| 1.32.3              | Calico 3.29.2  Flannel 0.26.5        | 1.7+             |
+| 1.31.6              | Calico 3.29.1  Flannel 0.26.1        | 1.6+             |
 
 ### **Software Dependencies**
-- OS: CentOS 7.9+ / Rocky Linux 8.6+
-- Container Runtime: Containerd 1.6+
+- OS: CentOS 7.9+ / Rocky Linux 8.6+ 
+- Container Runtime: Docker 3.27+
 - Kernel: ≥ 5.4（recommended with `overlay2` and `ipvs` modules enabled).
 
 ### **Network Requirements**
@@ -75,7 +75,7 @@ High Availability (HA) Cluster using kubeadm and keepalived (Docker container ru
     apiVersion: kubeadm.k8s.io/v1beta3
     kind: ClusterConfiguration
     kubernetesVersion: v1.32.3
-    controlPlaneEndpoint: "172.168.20.90:16443"  # High Availability VIP Address
+    controlPlaneEndpoint: "172.168.20.110:16443"  # High Availability VIP Address
     networking:
       podSubnet: "192.168.0.0/16"         # Must be compatible with the CNI plugin
     apiServer:

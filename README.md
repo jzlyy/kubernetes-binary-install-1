@@ -18,7 +18,7 @@ High Availability (HA) Cluster using kubeadm and keepalived (Docker container ru
 **Core Features**
 - One-click deployment of a highly available Kubernetes control plane with multi-Master node load balancing.
 - Automated TLS certificate issuance for components (etcd, apiserver, kubelet).
-- Optimized configuration for the Containerd runtime.
+- Optimized configuration for the Docker runtime.
 - Integration of CNI plugins (Calico/Flannel, etc.) with NetworkPolicy support.
 
 **Extended Capabilities**
